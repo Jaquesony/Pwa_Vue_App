@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Dar-es-Salaam",
+        "regions": [
+            {
+                "name": "Ilala"
+            },
+            {
+                "name": "Kawe"
+            },
+            {
+                "name": "Kinondoni"
+            },
+            {
+                "name": "Temeke"
+            },
+            {
+                "name": "Ubungo"
+            }
+        ]
+    },
+    {
+        "name": "Morogoro",
+        "regions": [
+            {
+                "name": "Gairo"
+            },
+            {
+                "name": "Ifakara"
+            },
+            {
+                "name": "Kilombero"
+            },
+            {
+                "name": "Kilosa"
+            },
+            {
+                "name": "Malinyi"
+            },
+            {
+                "name": "Morogoro Municipal"
+            },
+            {
+                "name": "Morogoro District"
+            },
+            {
+                "name": "Mvumero"
+            },
+            {
+                "name": "Ulanga"
+            }
+        ]
+    }
+]

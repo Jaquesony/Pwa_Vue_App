@@ -3,12 +3,12 @@
         <div class="surface-card p-4 shadow-none border-round w-full lg:w-6">
       <div class="text-center mb-5">
         <img
-          src="images/blocks/logos/hyper.svg"
+          src="images/awamupay.jpg"
           alt="Image"
           height="50"
           class="mb-3"
         />
-        <div class="text-900 text-3xl font-medium mb-3">LOGIN Sales System</div>
+        <div class="text-900 text-3xl font-medium mb-3">AwamuPay CRM</div>
         <!-- <span class="text-600 font-medium line-height-3"
           >Don't have an account?</span
         > -->
@@ -115,7 +115,7 @@ const siginingUp = async () => {
 };
 const goToHome = () => {
   if(isAuthenticated.value) {
-    router.push("/dashboard");
+    router.push("/billings");
   }else {
     setError("Invalid username or password");
     start();

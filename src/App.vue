@@ -102,8 +102,8 @@ export default {
           // label: "Home",
           items: [
             {
-              label: "Dashboard",
-              icon: "pi pi-fw pi-home",
+              label: "Notes",
+              icon: "pi pi-fw pi-book",
               to: "/dashboard",
             },
           ],

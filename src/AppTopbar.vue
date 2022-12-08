@@ -6,7 +6,7 @@
       <router-link to="/" class="layout-topbar-logo">
         <!-- <img alt="Logo" :src="topbarImage()" />
         <span>{{ companyName }}</span> -->
-        <h5 class="font-bold">Sales Web App</h5>
+        <h5 class="font-bold">Awamupay CRM</h5>
       </router-link>
       <button
         class="p-link layout-menu-button layout-topbar-button"

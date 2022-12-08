@@ -4,7 +4,7 @@
       <div class="font-medium text-2xl text-900 font-bold text-blue-800">
         Status: {{ invoiceInfo.status }}
       </div>
-
+      <hr>
       <select class="text-primary-800" v-model="invoiceInfo.status">
         <option>Won</option>
         <option>Lost</option>
@@ -21,15 +21,14 @@
       <div class="col-12 md:col-12 px-3">
         <div class="p-1">
           <div class="grid">
-            <div class="col-6">
+            <div class="col">
               <Image
                 src="images/logob.png"
-                width="500"
-                height="121"
+                width="350"
                 alt="Image Text"
               />
             </div>
-            <div class="col-6">
+            <div class="col">
               <span class="block mb-2 font-bold text-center text-xl"
                 >Invoice</span
               >
@@ -58,7 +57,7 @@
       </div>
       <div class="col-12 md:col-12">
         <div class="grid p-1">
-          <div class="col-6">
+          <div class="col">
             <span class="block font-bold mb-2">Our Info:</span>
             <span class="block text-500 font-medium mb-2 text-yellow-500"
               >KCT LTD</span
@@ -83,7 +82,7 @@
             >
             <!-- <div class="text-900 font-medium text-xl">Mwenge, Mpakani</div> -->
           </div>
-          <div class="col-6">
+          <div class="col">
             <span class="block mb-2 font-bold">Customer:</span>
             <span class="block text-900 font-medium mb-2"
               >{{ invoiceInfo.customername }} {{ middlename }}
@@ -129,7 +128,7 @@
               <tr>
                 <td>
                   <p class="font-bold">First Installment</p>
-                  {{ invoiceInfo.projectname }} SQM ({{ invoiceInfo.area }})
+                  {{ invoiceInfo.projectname }} (SQM {{ invoiceInfo.area }})
                 </td>
                 <td>
                   {{
@@ -160,17 +159,26 @@
 
         <div class="surface-card p-1">
           <div class="grid">
-            <div class="col-6">
-              <span class="block mb-2"
-                >ACCOUNT NAME CRDB BANK: KONNECT CONSTRUCT AND TRANSFORM LIMITED
-                <p class="font-bold">ACCOUNT NUMBER: 0150481643100,</p>
-                TIN NUMBER: 140-006-564</span
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col-3">
+                <span class="block mb-6">Authorized Person</span>
+                <div>MSHERI MVUNGI</div>
+                <span>ACCOUNTANT</span>
+              </div>
+          </div>
+          <div class="grid">
+            <div class="col-8">
+              <div class="block mb-2"
+                >BANK: <span class="font-bold">CRDB</span><br /> ACCOUNT NAME: <span class="font-bold">KONNECT CONSTRUCT AND TRANSFORM LIMITED</span><br />
+               ACCOUNT NUMBER: <span class="font-bold">0150481643100</span><br />
+                TIN NUMBER: <span class="font-bold">140-006-564</span></div
               >
               <hr />
-              <span class="block mb-2 font-bold">Terms:</span>
-              <span class="block mb-2 font-bold">Payment on receipt.</span>
-              <span class="block mb-2">Payment due on receipt</span>
-              <span class="block mb-3 font-bold"
+              <span class="block mb-2">Terms:</span>
+              <!-- <span class="block mb-2 font-bold">Payment on receipt.</span>
+              <span class="block mb-2">Payment due on receipt</span> -->
+              <span class="block mb-3"
                 >First monthly payment must be paid within 5 days of receiving
                 the form. Other installment paid within 35 months.</span
               >
@@ -180,7 +188,7 @@
               >
             </div>
 
-            <div class="col-6">
+            <div class="col-4">
               <span class="block mb-2 font-bold">Summary</span>
               <div class="flex alight-iterms-center">
                 <div class="block mb-2">Duration:</div>
@@ -212,6 +220,11 @@
                 Total Amount:
                 {{ formatPrice(invoiceInfo.area * invoiceInfo.unitprice) }}/=
               </span>
+              <Hr></Hr>
+              <!-- <span class="block">
+
+
+              </span> -->
             </div>
           </div>
         </div>
